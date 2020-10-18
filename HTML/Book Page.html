@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Book Flight</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS/Main Page.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+
+</style>
+<script src="../JS/Book Page.js"></script>
+</head>
+<body class="SH-light-grey">
+
+
+<!-- Header -->
+<header class="SH-display-container SH-content" style="max-width:1500px">
+  <img class="SH-image" src="../Images/Mumbai Busy.jpg" alt="Busy Mumbai" width="1500" height="300">
+  <div class="SH-display-middle" style="width:65%">
+    <div class="SH-bar SH-red SH-bar-item " style="font-size:25px;text-align:left;">
+     &nbsp; <img src="../Images/airplane2.png" height="25" width="25">&nbsp;Flights
+	 <a href="Main Page.html" style="text-decoration:none;font-size:25px;padding-left:25em;"><img src="../Images/home.png" height="25" width="25">&nbsp;Home</a>
+    </div>
+
+    <!-- Tabs -->
+    <form action="Main Page.html" onsubmit="return sub()">
+    <div id="Flight" class="SH-container SH-white SH-padding-16">
+      <h3 style="font-family:Arial;font-size:30px;">Travel the world with us</h3>
+      <div class="SH-row-padding" style="margin:0 -16px;">
+        <div class="SH-half">
+          <h6 style="font-family:Arial;font-size:20px;">From</h6>
+          <input name="ip1" class="SH-input SH-border" type="text" placeholder="Departing from" required="">
+        </div>
+        <div class="SH-half">
+          <h6 style="font-family:Arial;font-size:20px;">To</h6>
+          <input name="ip2" class="SH-input SH-border" type="text" placeholder="Arriving at" required="">
+        </div>
+      </div>
+      <div class="SH-row-padding" style="margin:0 -16px;">
+      <div class="SH-half">
+		 <h6 style="font-family:Arial;font-size:20px;">Depart</h6>
+		 <input class="SH-input SH-border" type="date" name="ip3" value="mm/dd/yyyy" required="">
+		 		 
+	  </div>
+	  <div class="SH-half">
+		 <h6 style="font-family:Arial;font-size:20px;">Return</h6>
+		 <input class="SH-input SH-border" type="date" name="ip4" value="mm/dd/yyyy" required="">
+		 <label><input type="checkbox" name="" checked="">&nbsp;Flexible with date</label>		 
+	  </div>
+	  </div>
+		
+		<div class="class">
+		<h6 style="font-family:Arial;font-size:20px;">Class</h6>
+			<select id="selection" class="SH-input SH-border">
+			<option value="null">Economy</option>  
+			<option value="null">Premium Economy</option>   
+			<option value="null">Business</option>   
+			<option value="null">First class</option>   						
+			</select>
+		</div>
+							
+      <p><button class="SH-button SH-deep-orange" style="font-family:Arial;font-size:18px;">Search Flights</button></p>
+    </div>
+
+      
+   </form>
+   </div>
+</header>
+<div class="SH-content" style="max-width:1100px;">
+</div>
+
+
+</body>
+</html>
